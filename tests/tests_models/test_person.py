@@ -8,7 +8,8 @@ import pytest
 def test_is_adult(adult, minor):
     """Test that the is_adult static method works as expected"""
     # TODO: Test both adult and minor ages with Person.is_adult()
-
+    assert adult.is_adult() 
+    assert not minor.is_adult()
 
 def test_sort_by_age(person_list):
     """Test that the sort_by_age method sorts a list of Person instances by age"""
